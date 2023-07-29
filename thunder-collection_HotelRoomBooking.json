@@ -1,0 +1,193 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HotelRoomBooking",
+    "dateExported": "2023-07-26T09:02:50.913Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "608aa76a-9ef3-4ec8-94b1-d74605c98606",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Create Hotel",
+            "url": "http://localhost:8800/api/hotels",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-12T20:17:20.849Z",
+            "modified": "2023-07-23T10:14:27.449Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Hotel das 5\",\n  \"type\":\"hotel\",\n  \"city\":\"delhi\",\n  \"address\":\"Somewhere\",\n  \"distance\":\"500\",\n  \"title\":\"This is the best hotel in the city\",\n  \"desc\":\"Hotel description\",\n  \"cheapestPrice\":100\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0c040c9-922a-4f82-8081-47c821ae284a",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Update Hotel",
+            "url": "http://localhost:8800/api/hotels/64af0f9b3f147242a7a30750",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-07-12T20:48:22.852Z",
+            "modified": "2023-07-14T21:30:46.753Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Hotel Based\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "24e91356-3a03-47f1-9f8a-c478e9953546",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Get Hotels",
+            "url": "http://localhost:8800/api/hotels/find/64bcfd836bfa7e6d38d4d5c7",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-12T21:02:42.184Z",
+            "modified": "2023-07-24T17:27:33.653Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8e198b1d-ca59-40d9-8a7a-c17b2f30f4f4",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Get All Hotels",
+            "url": "http://localhost:8800/api/hotels",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-12T21:04:55.689Z",
+            "modified": "2023-07-24T17:37:40.891Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5b0a0912-c26a-46ce-9335-ef70cbfe6a10",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Delete Hotel",
+            "url": "http://localhost:8800/api/hotels/64af155533d512b7294dfea1",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-07-12T21:05:44.381Z",
+            "modified": "2023-07-12T21:06:26.239Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c48fb20-c54e-4ddd-a53e-01ca82914fe3",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:8800/api/auth/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-13T10:58:58.135Z",
+            "modified": "2023-07-13T11:36:33.122Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"swarsdf\",\n  \"email\":\"swarnarka@gmail.com\",\n  \"password\":\"12354\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7488ea09-16aa-45ad-b102-c74dde85085b",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:8800/api/auth/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-07-13T15:19:49.698Z",
+            "modified": "2023-07-13T16:51:49.645Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"swarsdf\",\n  \"email\":\"swarnarka@gmail.com\",\n  \"password\":\"12354\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ab73f060-662a-478d-974f-5d55cae3826f",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Update  User",
+            "url": "http://localhost:8800/api/users/checkadmin/64afe1e46700e5114877a905",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-07-14T17:24:07.131Z",
+            "modified": "2023-07-14T21:09:02.364Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"swarnarkaUpdated\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad4f3178-3489-481f-a1ae-70392fe91b8e",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Create Room",
+            "url": "http://localhost:8800/api/rooms/64af0f9b3f147242a7a30750",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-07-18T16:47:28.255Z",
+            "modified": "2023-07-18T16:59:13.552Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"King room\",\n  \"desc\":\"King size bed,1 bathroom,balcony\",\n  \"price\":100,\n  \"maxPeople\":2,\n  \"roomNumbers\": [{\"number\":101},{\"number\":102}]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5808cdae-0c9b-4144-9c7b-65b784f77796",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Delete Room",
+            "url": "http://localhost:8800/api/rooms/64b6c5315c35ef77d73243d8/64af0f9b3f147242a7a30750",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-07-18T17:14:18.960Z",
+            "modified": "2023-07-18T17:21:18.003Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4e05e6fd-8682-4ebd-bbaf-be5a398b04e1",
+            "colId": "02fec886-37e9-477c-a018-24f569260241",
+            "containerId": "",
+            "name": "Get Hotel Count",
+            "url": "http://localhost:8800/api/hotels/countByType",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-07-23T10:09:44.383Z",
+            "modified": "2023-07-23T14:46:47.361Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
